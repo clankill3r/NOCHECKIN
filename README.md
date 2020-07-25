@@ -12,7 +12,17 @@ The reason I make a repository out of this is so people can watch it and will be
 
 
 #### Changelog
-- I modified the *pre-commit* hook so that it won't stage the other files that did not contain the @**NOCHECKIN**.
+
+```
+V3:
+- All filenames containing @NOCHECKIN are listed now instead of only the first one.
+
+V2:
+- Not a single file is commited now when @NOCHECKIN is present (before it would commit the files that did not have an @NOCHECKIN).
+
+V1:
+- initial
+```
 
 #### Usage
 
