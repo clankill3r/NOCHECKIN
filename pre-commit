@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# V4
+# V5
 
 exit_code=0
 
@@ -9,8 +9,8 @@ s_files=$(git diff --name-only --cached --diff-filter=d)
 
 # if a staged file contains the keyword, get it out of the staged list
 for s_file in ${s_files};do
-    if git grep -q -E @NOCHECKIN :$s_file;then
-        echo "WARNING: ${s_file} contains the keyword @NOCHECKIN"
+    if git grep -q -E -iF nocheckin :$s_file;then
+        echo "WARNING: ${s_file} contains the keyword nocheckin"
         exit_code=1
     fi
 done
