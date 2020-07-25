@@ -1,11 +1,11 @@
 #!/bin/bash
 
-# V3
+# V4
 
 exit_code=0
 
 # get the staged files
-s_files=$(git diff --name-only --cached)
+s_files=$(git diff --name-only --cached --diff-filter=d)
 
 # if a staged file contains the keyword, get it out of the staged list
 for s_file in ${s_files};do

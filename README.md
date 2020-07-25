@@ -14,6 +14,8 @@ The reason I make a repository out of this is so people can watch it and will be
 #### Changelog
 
 ```
+V4:
+- added "--diff-filter=d" to fix problem with deleted files.
 V3:
 - All filenames containing @NOCHECKIN are listed now instead of only the first one.
 
