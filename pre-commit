@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# V2
+
+exit_code=0
+
 # get the staged files
 s_files=$(git diff --name-only --cached)
 
@@ -7,8 +11,8 @@ s_files=$(git diff --name-only --cached)
 for s_file in ${s_files};do
     if git grep -q -E @NOCHECKIN :$s_file;then
         echo "WARNING: ${s_file} contains the keyword @NOCHECKIN"
-        exit 1
+        exit_code=1
     fi
 done
 
-exit 0
+exit $exit_code
