@@ -15,7 +15,7 @@ The reason I make a repository out of this is so people can watch it and will be
 
 ```
 V5:
-- @ prefix no longer required, and search is not case insensitive.
+- @ prefix no longer required, and search is case insensitive.
 V4:
 - added "--diff-filter=d" to fix problem with deleted files.
 V3:
