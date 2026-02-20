@@ -32,6 +32,8 @@ V1:
 
 This `pre-commit` file should be placed inside `.git/hooks`.
 
+Make sure the `pre-commit` file has the permisions to be executed!
+E.g. `chmod +x pre-commit` on OSX.
 
 #### Notes
 For those interested, it also works with [Fork](https://git-fork.com/).
